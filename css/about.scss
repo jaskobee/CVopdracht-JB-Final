@@ -1,0 +1,561 @@
+@import 'jaskobstrap';
+
+// Begin Code van Web Display
+.nav {
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: -170px;
+    overflow-x: hidden;
+    padding-top: 15px;
+    text-align: left;
+    transition: left 0.3s ease;
+
+    .compass {
+        height: 35px;
+        display: inline-block;
+        position: fixed;
+        margin: 1rem;
+        cursor: pointer;
+        top: 0px;
+        left: 0px;
+        transition: left 0.3s ease;
+        // animation: spin 0.8s ease-in-out;
+    }
+
+    a {
+        display: block;
+        font-size: 1rem;
+        margin: 0.5rem;
+        margin-bottom: 1.5rem;
+        color: $textcolor;
+        text-decoration: none;
+        font-family: 'nunito';
+        text-transform: uppercase;
+
+        i {
+            padding-right: 10px;
+            color: $primary-color;
+        }
+    }
+
+    a:hover {
+        color: $primary-color;
+    }
+
+    .active {
+        color: $primary-color;
+    }
+
+    .cv {
+        padding-right: 15px;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.nav-visable {
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    overflow-x: hidden;
+    padding-top: 15px;
+    text-align: left;
+
+    .compass {
+        height: 35px;
+        display: inline-block;
+        position: fixed;
+        cursor: pointer;
+        top: 0px;
+        left: 170px;
+        transition: left 0.3s ease;
+        // animation: spin 0.8s ease-in-out;
+    }
+
+    .active {
+        color: $primary-color;
+    }
+}
+
+// image rotation code !!
+.imageRot {
+    -webkit-animation: spin 0.6s ease-in-out;
+    -moz-animation: spin 0.6s ease-in-out;
+    animation: spin 0.6s ease-in-out;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+// einde img rotatie code
+
+.main {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+}
+
+.text {
+    flex-direction: column;
+    padding: 5.8rem 4rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-left: 4px solid $primary-color;
+    color: $maintext;
+    background-color: $doorzichtigoranje;
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        margin: 0px;
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .text-orange {
+        color: $primary-color;
+        font-size: 4rem;
+    }
+}
+
+.footer-foto {
+    img {
+        margin-bottom: -5px;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: $primary-color;
+    height: 100%;
+    padding: 2rem 0rem;
+
+    img {
+        height: 130px;
+        margin-left: 10rem;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $textcolor;
+    }
+
+    i {
+        color: $primary-color;
+        margin: 1rem 0.5rem;
+        font-size: 1.5vw;
+    }
+
+    .first {
+        text-align: left;
+    }
+
+    .middle {
+        text-align: center;
+
+        i {
+            padding: 0.3rem;
+        }
+
+        i:hover {
+            background-color: $primary-color;
+            color: black;
+            border-radius: 100%;
+        }
+    }
+
+    .last {
+        padding-top: 4%;
+    }
+
+    p {
+        color: $textcolor;
+        margin: 0.5rem 0;
+    }
+
+    li,
+    ul {
+        list-style: none;
+        padding: 3px 0px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    li {
+        a:hover {
+            color: $primary-color;
+        }
+
+        .active {
+            color: $primary-color;
+        }
+    }
+}
+
+.mobile-trees {
+    img {
+        display: none;
+    }
+}
+
+.arrow-up {
+    img {
+        display: none;
+    }
+}
+
+.mobile-footer {
+    display: none;
+}
+
+.content {
+    .row {
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    // .first {
+    //     margin-left: 2.5rem;
+    // }
+
+    .col-4 {
+        background-color: rgba(236, 228, 183, 0.205);
+        flex: 1 100px;
+        padding: 3rem 0rem;
+        margin: 2rem 5rem;
+
+        h4,
+        h5 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .second {
+        margin: 2rem 0rem;
+    }
+
+    p,
+    li {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .student-icon {
+        margin-bottom: 1.8rem;
+    }
+}
+
+// Einde Code van Web Display
+
+// Begin code iPad++
+
+@media only screen and (max-width: $breakpoint-laptop) {
+    .main {
+        img {
+            max-height: 368px;
+        }
+
+        .text {
+            height: 50%;
+
+            h1 {
+                margin: 0px;
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .footer {
+        img {
+            margin-left: 20%;
+        }
+
+        i {
+            font-size: 1.4rem;
+        }
+    }
+
+    .mobile-trees {
+        img {
+            display: none;
+        }
+    }
+
+    .content {
+        .row {
+            flex-direction: column;
+        }
+
+        .col-4 {
+            padding: 3rem 0rem;
+            margin: 2rem 5rem;
+        }
+    }
+}
+
+// Begin of Tablet Display
+
+@media only screen and (max-width: $breakpoint-tablet) {
+    .main {
+        background-image: url(../Fotos/IMG_1518.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0;
+
+        .text {
+            margin: 2rem 0rem;
+            padding: 0.5rem 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 6px solid $primary-color;
+            color: $textcolor;
+            background-color: $doorzichtigzwart;
+
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 12vw;
+            }
+
+            h2 {
+                font-size: 8vw;
+                margin: 0;
+            }
+
+            .text-orange {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .nav {
+        background-color: black;
+        color: $primary-color;
+        text-align: center;
+        border-bottom: 2px solid $primary-color;
+        height: initial;
+        width: 100%;
+        position: fixed;
+        z-index: 0;
+        top: initial;
+        left: initial;
+        overflow-x: initial;
+        padding-top: 15px;
+        text-align: center;
+
+        .compass {
+            display: none;
+        }
+
+        a {
+            display: inline;
+            font-size: 0;
+        }
+
+        img {
+            display: initial;
+            position: absolute;
+            top: 140%;
+            left: 30%;
+        }
+
+        i {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 2rem;
+            margin: 0.8rem 1.5rem;
+            position: relative;
+        }
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .footer-foto {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .arrow-up {
+        a img {
+            display: inherit;
+            margin: auto;
+            padding: 2rem 0rem;
+            display: block;
+        }
+    }
+
+    .mobile-trees {
+        img {
+            display: initial;
+            margin: auto;
+            display: block;
+        }
+    }
+
+    .mobile-footer {
+        background-color: black;
+        display: block;
+        width: 100vw;
+
+        img {
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+// END OF TABLET Display
+
+// Begin van Mobile Display
+
+@media only screen and (max-width: $breakpoint-mobile) {
+    .main {
+        background-image: url(../Fotos/IMG_1518.JPG);
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-end;
+
+        .text {
+            margin: 6rem 1rem;
+            padding: 0.5rem 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 6px solid $primary-color;
+            color: $textcolor;
+            background-color: $doorzichtigzwart;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 13vw;
+            }
+
+            h2 {
+                font-size: 11vw;
+                margin: 0;
+            }
+
+            .text-orange {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .nav {
+        background-color: black;
+        color: $primary-color;
+        text-align: center;
+        border-bottom: 2px solid $primary-color;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 170%;
+            left: 25%;
+        }
+
+        i {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 1.5rem;
+            margin: 1rem 0.8rem;
+        }
+    }
+
+    .footer-foto {
+        display: none;
+    }
+
+    .content {
+        .col-4 {
+            background-color: $divachtergrond;
+            margin: 2rem 3rem;
+            padding: 2rem 2rem;
+        }
+    }
+
+    .mobile-trees {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: initial;
+    }
+}
+
+// End of Mobile Display

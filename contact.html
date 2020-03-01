@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasko Berbic - Contact</title>
+    <!-- mijn css style link -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Link naar fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css" />
+</head>
+
+<body>
+    <!-- Zwarte navigatie balk links van mijn page -->
+
+    <div id="myNav" class="nav">
+        <a href="index.html"><i class="fas fa-home btn"></i> Home</a>
+        <a href="about.html"><i class="fas fa-address-card btn"></i> About Me</a>
+        <a href="mycv.html"><i class="fas fa-file-alt cv btn"></i> My CV</a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope btn"><img src="Web-Icons/Polygon 11.png"
+                    alt="Nav Bar Icon Arrow" class="img-fluid"></i> Contact</a>
+
+        <img src="Web-Icons/COMPASS@2x.png" alt="Compass" class="compass" />
+    </div>
+    <!-- BEGIN VAN MAIN ===================================== -->
+    <div id="main-page" class="main d-flex">
+        <div class="text d-flex">
+            <h2>Left with</h2>
+            <h1 class="text-orange">questions ?</h1>
+            <h2>or want to have a</h2>
+            <h1 class="text-orange">Chat ?</h1>
+        </div>
+        <div class="foto">
+            <img src="Fotos/IMG_2145.jpg" alt="Jasko in de bergen">
+        </div>
+    </div>
+    <!-- EINDE VAN MAIN ===================================== -->
+
+    <!-- BEGIN VAN FORMULIER ===================================== -->
+    <section class="content">
+        <h1>Feel free to contact me</h1>
+        <form action="contact-submit.html" method="post">
+            <div class="naam">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="user_name" />
+            </div>
+            <div class="email">
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" />
+            </div>
+            <div class="msg">
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- EINDE VAN FORMULIER ===================================== -->
+
+    <!-- BEGIN VAN Footer ===================================== -->
+    <div class="footer-foto">
+        <img src="../Code/Web-Icons/Component 1 – 13.png" alt="Black N White Woods" class="img-fluid">
+    </div>
+    <div class="footer d-flex">
+        <div class="col-3">
+            <img src="Web-Icons/nav-logo.png" alt="Nav Logo J.Be" class="img-fluid">
+        </div>
+        <div class="col-3  first">
+            <h6>Navigation</h6>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="mycv.html">My CV</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-3 middle">
+            <a href="https://www.linkedin.com/in/jaskob/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/jaskob3/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/jberbic"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/cozje"><i class="fab fa-twitter"></i></a>
+            <p>info@jasko.be</p>
+            <p>+3292807368</p>
+        </div>
+        <div class="col-3 last">
+            <p>Designed by Jasko Berbic ©</p>
+            <p>Photos by Roos Dirks ©</p>
+        </div>
+    </div>
+    <!-- EINDE VAN FOOTER ===================================== -->
+
+    <!-- Mobile Only Here -->
+    <div class="arrow-up">
+        <a href="#main-page"><img src="Web-Icons/Arrow-UP.png" alt="Arrow Up" /></a>
+    </div>
+    <!-- Mobile Footer Trees -->
+    <div class="mobile-trees">
+        <img src="Web-Icons/Mobile-FooterTrees@2x.png" alt="Trees" />
+    </div>
+    <div class="mobile-footer">
+        <img src="Web-Icons/nav-logo@2x.png" alt="Nav Logo" />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
